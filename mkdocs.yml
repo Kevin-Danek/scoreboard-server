@@ -1,0 +1,25 @@
+site_name: Scoreboard Server Docs
+dev_addr: 127.0.0.1:8001
+theme:
+  name: material
+  language: cs
+  features:
+    - navigation.sections
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: cs
+          name: Čeština
+          build: true
+
